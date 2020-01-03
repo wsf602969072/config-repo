@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: client
+  cloud:
+    bus:
+      trace:
+        enabled: true
+      enabled: true
+  rabbitmq:
+    host: localhost
+    username: wangshangfei
+    password: 123456
+    port: 5672
+server:
+  port: 13001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
